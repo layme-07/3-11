@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- S1: Viewport para escalado responsivo en móviles -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto 1 - Portal Académico Institucional</title>
+<!-- MÉTODO 1: CDN (requiere internet) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<!-- S3 y S4: Navbar colapsable fijo, enlaces a la derecha -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🎓 Instituto Tech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menuTech" aria-controls="menuTech"
+            aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuTech">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Académica</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- S2: Banner superior con display-4 -->
+<header class="bg-primary text-white text-center py-5">
+  <div class="container py-3">
+    <h1 class="display-4 fw-bold">Oferta Académica 2026</h1>
+    <p class="lead mb-0">Formación técnica profesional orientada a la tecnología e innovación.</p>
+  </div>
+</header>
+
+<!-- S2: Rejilla 3 col desktop, 2 tablet, 1 móvil -->
+<main class="container py-5" id="oferta">
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <span class="badge bg-primary align-self-start mb-3">3 Años</span>
+          <h3 class="h5 fw-bold">Desarrollo de Software</h3>
+          <p class="card-text text-body-secondary">Programación web, bases de datos y desarrollo de apps móviles.</p>
+          <a href="#" class="btn btn-outline-primary mt-auto">Más Información</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <span class="badge bg-success align-self-start mb-3">3 Años</span>
+          <h3 class="h5 fw-bold">Sistemas y Redes</h3>
+          <p class="card-text text-body-secondary">Infraestructura cloud, ciberseguridad y servidores empresariales.</p>
+          <a href="#" class="btn btn-outline-primary mt-auto">Más Información</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <span class="badge bg-danger align-self-start mb-3">2 Años</span>
+          <h3 class="h5 fw-bold">Diseño UI/UX Digital</h3>
+          <p class="card-text text-body-secondary">Maquetación responsiva, experiencia de usuario y prototipado.</p>
+          <a href="#" class="btn btn-outline-primary mt-auto">Más Información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4" id="contacto">
+  <p class="mb-0 small">contacto@institutotech.edu · © 2026 Instituto Tech</p>
+</footer>
+<!-- JavaScript desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
